@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomerCategoriesView" customModule="BrandStore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="427" height="148"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="ZU9-bi-Qpa">
+                    <rect key="frame" x="10" y="44" width="407" height="60"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7cV-9S-Tc4">
+                            <rect key="frame" x="0.0" y="0.0" width="407" height="29"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7we-hs-2Fz">
+                                    <rect key="frame" x="0.0" y="0.0" width="149.5" height="29"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Вона">
+                                        <color key="titleColor" systemColor="labelColor"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mxW-wx-gLs">
+                                    <rect key="frame" x="149.5" y="0.0" width="124.5" height="29"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Він">
+                                        <color key="titleColor" systemColor="labelColor"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fuc-4s-yEh">
+                                    <rect key="frame" x="274" y="0.0" width="133" height="29"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Діти">
+                                        <color key="titleColor" systemColor="labelColor"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TZG-uP-Yed" userLabel="Line">
+                            <rect key="frame" x="0.0" y="58" width="407" height="2"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iL9-om-ZZi" userLabel="Line">
+                                    <rect key="frame" x="133" y="0.0" width="141" height="2"/>
+                                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="2" id="OWz-5J-IcV"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBlueColor"/>
+                            <constraints>
+                                <constraint firstItem="iL9-om-ZZi" firstAttribute="leading" secondItem="TZG-uP-Yed" secondAttribute="leading" constant="133" id="1Ir-vP-Ger"/>
+                                <constraint firstItem="iL9-om-ZZi" firstAttribute="centerX" secondItem="TZG-uP-Yed" secondAttribute="centerX" id="6bA-MU-uVA"/>
+                                <constraint firstItem="iL9-om-ZZi" firstAttribute="centerY" secondItem="TZG-uP-Yed" secondAttribute="centerY" id="Eg6-ww-UIa"/>
+                                <constraint firstItem="iL9-om-ZZi" firstAttribute="centerX" secondItem="TZG-uP-Yed" secondAttribute="centerX" id="X5K-e7-hT9"/>
+                                <constraint firstAttribute="height" constant="2" id="kGa-QG-KPL"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="7cV-9S-Tc4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="0ea-q5-g93"/>
+                <constraint firstItem="ZU9-bi-Qpa" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="SAu-mm-rOc"/>
+                <constraint firstItem="ZU9-bi-Qpa" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bi4-yC-5mJ"/>
+                <constraint firstAttribute="trailing" secondItem="7cV-9S-Tc4" secondAttribute="trailing" constant="10" id="qUz-Dq-u3k"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="childrenButton" destination="Fuc-4s-yEh" id="piA-Tg-xi9"/>
+                <outlet property="femaleButton" destination="7we-hs-2Fz" id="25B-pk-yhj"/>
+                <outlet property="maleButton" destination="mxW-wx-gLs" id="VfX-pc-6Av"/>
+            </connections>
+            <point key="canvasLocation" x="178" y="94"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
